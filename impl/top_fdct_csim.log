@@ -1,0 +1,78 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../test_wang_fdct.cpp in debug mode
+   Compiling ../../../../fdctref.cpp in debug mode
+   Compiling ../../../../my_dct.cpp in debug mode
+   Compiling ../../../../wang_fdct.cpp in debug mode
+   Generating csim.exe
+
+Original data (-128) in the 8x8 Block
+
+  40	  33	  33	  22	  26	  40	  36	  26	
+  43	  26	  33	  22	  29	  43	  22	  36	
+  43	  40	  19	  36	  36	  33	  15	  26	
+  36	  43	  26	  33	  29	  29	  19	   4	
+  33	  33	  29	  26	  15	  33	  26	   4	
+  36	  33	  33	  26	  22	  29	  26	  12	
+  33	  40	  29	  26	  33	  12	  12	   4	
+  26	  33	  29	  22	  12	   4	   8	   0	
+
+REF FDCT output data
+
+ 214	  49	  -3	  20	 -10	  -1	   1	  -6	
+  34	 -25	  11	  13	   5	  -3	  15	  -6	
+  -6	  -4	   8	  -9	   3	  -3	   5	  10	
+   8	 -10	   4	   4	 -15	  10	   6	   6	
+ -13	   5	  -1	  -2	 -15	   9	  -5	  -1	
+   5	   9	  -8	   3	   4	  -7	 -14	   2	
+   2	  -2	   3	  -1	   1	   3	  -3	  -4	
+  -1	   1	   0	   2	   3	  -2	  -4	  -2	
+
+ DUT  FDCT output data
+
+ 215	  49	  -3	  20	 -10	  -1	   1	  -6	
+  34	 -25	  11	  13	   5	  -3	  15	  -6	
+  -6	  -4	   8	  -9	   3	  -3	   5	  10	
+   8	 -10	   4	   4	 -15	  10	   6	   6	
+ -12	   5	  -1	  -1	 -15	   9	  -5	  -1	
+   5	   9	  -8	   3	   4	  -7	 -14	   2	
+   2	  -2	   3	  -1	   1	   3	  -3	  -4	
+  -1	   1	   0	   2	   3	  -2	  -4	  -3	
+
+ Difference between REF and DUT FDCT data
+
+   1	   0	   0	   0	   0	   0	   0	   0	
+   0	   0	   0	   0	   0	   0	   0	   0	
+   0	   0	   0	   0	   0	   0	   0	   0	
+   0	   0	   0	   0	   0	   0	   0	   0	
+   1	   0	   0	   1	   0	   0	   0	   0	
+   0	   0	   0	   0	   0	   0	   0	   0	
+   0	   0	   0	   0	   0	   0	   0	   0	
+   0	   0	   0	   0	   0	   0	   0	   1	
+
+ WANG IDCT output data
+
+  40	  33	  33	  22	  26	  41	  36	  26	
+  43	  26	  33	  22	  29	  42	  22	  36	
+  43	  40	  19	  36	  36	  33	  15	  26	
+  36	  43	  26	  33	  29	  29	  19	   4	
+  34	  33	  29	  26	  15	  33	  26	   4	
+  36	  33	  33	  27	  22	  29	  26	  12	
+  33	  40	  29	  26	  33	  13	  12	   4	
+  26	  33	  29	  22	  12	   4	   9	   1	
+
+ Difference between Original (-128) and Reconstructed data
+
+   0	   0	   0	   0	   0	   1	   0	   0	
+   0	   0	   0	   0	   0	   1	   0	   0	
+   0	   0	   0	   0	   0	   0	   0	   0	
+   0	   0	   0	   0	   0	   0	   0	   0	
+   1	   0	   0	   0	   0	   0	   0	   0	
+   0	   0	   0	   1	   0	   0	   0	   0	
+   0	   0	   0	   0	   0	   1	   0	   0	
+   0	   0	   0	   0	   0	   0	   1	   1	
+    *** *** *** *** 
+    Results are good 
+    *** *** *** *** 
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************
